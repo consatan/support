@@ -1,0 +1,31 @@
+{
+    "name": "consatan/support",
+    "description": "Helper functions package.",
+    "keywords": ["helpers", "functions", "support", "utils"],
+    "type": "library",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "Chopin Ngo",
+            "email": "consatan@gmail.com",
+            "homepage": "https://chopin.im"
+          }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Consatan\\Support\\": "src/"
+        },
+        "files": ["src/functions_include.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Consatan\\Support\\Tests\\": "tests/"
+        }
+    }
+}
